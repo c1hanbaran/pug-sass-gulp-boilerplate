@@ -1,0 +1,46 @@
+// Breakpoints
+$xxs-width: 501px
+$sm-width: 768px
+$md-width: 992px
+$lg-width: 1200px
+$lg-mid-width: 1367px
+$xlg-width: 1600px
+
+//     xxs < 501
+=xxs
+  @media (max-width: unquote("#{$xxs-width} - 1px"))
+    @content
+
+//     xs < 768
+=xs
+  @media (max-width: unquote("#{$sm-width} - 1px"))
+    @content
+
+//     sm < 992
+=sm
+  @media (max-width: unquote("#{$md-width} - 1px"))
+    @content
+
+//     md < 1200
+=md
+  @media (max-width: unquote("#{$lg-width} - 1px"))
+    @content
+
+// lg-mid <1367
+=lg-mid
+  @media (max-width: unquote("#{$lg-mid-width} - 1px"))
+    @content
+
+//     lg < 1600
+=lg
+  @media (max-width: unquote("#{$xlg-width} - 1px"))
+    @content
+
+//Example Usage
+
+// p
+//   font-size: 25px
+//   +lg
+//     font-size: 20
+//   +md
+//     font-size: 16px

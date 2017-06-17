@@ -1,0 +1,31 @@
+// Inherited Box Sizing
+*,
+*:before,
+*:after
+  box-sizing: inherit
+
+html,
+body
+  height: 100%
+  box-sizing: border-box
+
+// Clearfix Group
+.clearfix-group:before,
+.clearfix-group:after
+  content: ""
+  display: table
+
+.clearfix-group:after
+  clear: both
+
+.clearfix-group
+  zoom: 1
+  overflow: auto
+
+//Sticky Footer
+.site
+  display: flex
+  flex-direction: column
+
+.site__site-content
+  flex: 1

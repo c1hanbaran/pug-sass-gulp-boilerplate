@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+html {
+  font-size: 14px; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #CEAC65;
+  font-size: 1rem;
+  line-height: 1.428; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.428; }
+
+h1 {
+  font-size: 2.371rem; }
+  @media (max-width: 1199px) {
+    h1 {
+      font-size: 2.12rem; } }
+  @media (max-width: 991px) {
+    h1 {
+      font-size: 1.9rem; } }
+
+h2 {
+  font-size: 1.942rem; }
+  @media (max-width: 1199px) {
+    h2 {
+      font-size: 1.73rem; } }
+  @media (max-width: 991px) {
+    h2 {
+      font-size: 1.52rem; } }
+
+h3 {
+  font-size: 1.714rem; }
+  @media (max-width: 1199px) {
+    h3 {
+      font-size: 1.54rem; } }
+  @media (max-width: 991px) {
+    h3 {
+      font-size: 1.37rem; } }
+
+h4 {
+  font-size: 1.185rem; }
+  @media (max-width: 1199px) {
+    h4 {
+      font-size: 1.06rem; } }
+  @media (max-width: 991px) {
+    h4 {
+      font-size: 0.9rem; } }
+
+h5 {
+  font-size: 1rem; }
+  @media (max-width: 1199px) {
+    h5 {
+      font-size: 0.9rem; } }
+  @media (max-width: 991px) {
+    h5 {
+      font-size: 0.8rem; } }
+
+h6 {
+  font-size: 0.857rem; }
+  @media (max-width: 1199px) {
+    h6 {
+      font-size: 0.76rem; } }
+  @media (max-width: 991px) {
+    h6 {
+      font-size: 0.68rem; } }
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: #CEAC65; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html,
+body {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix-group:before,
+.clearfix-group:after {
+  content: "";
+  display: table; }
+
+.clearfix-group:after {
+  clear: both; }
+
+.clearfix-group {
+  zoom: 1;
+  overflow: auto; }
+
+.site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.site__site-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
