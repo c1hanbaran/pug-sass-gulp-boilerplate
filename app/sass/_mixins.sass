@@ -1,10 +1,16 @@
 // Breakpoints
+$xxxs-width: 361px
 $xxs-width: 501px
 $sm-width: 768px
 $md-width: 992px
 $lg-width: 1200px
 $lg-mid-width: 1367px
 $xlg-width: 1600px
+
+//     xxs < 360
+=xxxs
+  @media (max-width: unquote("#{$xxxs-width} - 1px"))
+    @content
 
 //     xxs < 501
 =xxs

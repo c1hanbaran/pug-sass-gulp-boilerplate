@@ -1,19 +1,22 @@
-// Variables and Mixins
+//Variables and Mixins
 @import ./_mixins
 @import ./_color-variables
 @import ./_z-index
 @import ./_font-faces
 
-// Typography and General Styles
+//Typography and General Styles
 @import ./_typography
 @import ./_general
+@import ./_extends
 
-// Layout
-@import ./layout/_main-header
-@import ./layout/_main-footer
+//Components
+@import ./_components/_mobile-menu.sass
+@import ./_components/_main-header.sass
+@import ./_components/_main-footer.sass
 
-// Index
-@import ./index/_index-banner
+//Site - Main Component
+@import ./_main/_main
 
-// Urun detay
-@import ./urunler/_urun-detay.sass
+//Index Page
+@import ./_index/_index
+@import ./_index/_component-1

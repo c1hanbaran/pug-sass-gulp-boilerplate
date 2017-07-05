@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(lang='tr')
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -14,32 +14,35 @@ html(lang='en')
     meta(name='theme-color', content='#ffffff')
 
     // Title and Description
-    title Ahmet İpek Sucukları
+    title Ahmet İpek
     meta(name='description', content='')
 
     //- CSS
     // build:css css/styles.min.css
     link(href='css/bootstrap.css', rel='stylesheet')
     link(href='css/owl.carousel.css', rel='stylesheet')
-    link(href='css/lightslider.css', rel='stylesheet')
     link(href='css/animate.css', rel='stylesheet')
     link(href='css/styles.css', rel='stylesheet')
     // endbuild
   body
+    //- Main Menu
+    include _components/_mobile-menu.pug
+
     //- Main Header
-    include _includes/_main-header.pug
+    include _components/_main-header.pug
 
     //- Content
-    div.site__site-content            
-      block content
+    main.main(role="main")
+      .main__main-container         
+        block content
 
     //- Main Footer
-    include _includes/_main-footer.pug
+    include _components/_main-footer.pug
 
     //- Javascript
     // build:js js/main.min.js
     script(src='js/jquery-3.2.1.min.js')
+    script(src='js/underscore-min.js')
     script(src='js/owl.carousel.min.js')
-    script(src='js/lightslider.js')
     script(src='js/main.js')
     // endbuild

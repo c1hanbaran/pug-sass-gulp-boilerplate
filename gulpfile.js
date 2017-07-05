@@ -13,15 +13,17 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+var flatten = require('gulp-flatten')
 
 // Development Tasks
 
-// Transpile pug files to html
+// Transpile pug files to html, flatten file path 
 gulp.task('views', function buildHTML() {
   return gulp.src('app/views/**/!(_)*.pug')
     .pipe(pug({
       pretty: true
     }))
+    .pipe(flatten())
     .pipe(gulp.dest('app'))
     .pipe(browserSync.reload({
       stream: true
@@ -101,7 +103,7 @@ gulp.task('fonts', function() {
 
 //Copy favicon
 gulp.task('favicons', function() {
-  return gulp.src('favicons/*')
+  return gulp.src('app/favicons/*')
     .pipe(gulp.dest('dist'))
 });
 

@@ -20,7 +20,7 @@ html {
   font-size: 14px; }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #CEAC65;
   font-size: 1rem;
   line-height: 1.428; }
@@ -88,9 +88,12 @@ h6 {
     h6 {
       font-size: 0.68rem; } }
 
-a:hover, a:focus, a:active {
-  text-decoration: none;
-  color: #CEAC65; }
+a {
+  -webkit-transition: 400ms;
+  transition: 400ms; }
+  a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #eadcbe; }
 
 *,
 *:before,
@@ -104,28 +107,49 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.clearfix-group:before,
-.clearfix-group:after {
+.clearfix-group::before,
+.clearfix-group::after {
   content: "";
   display: table; }
 
-.clearfix-group:after {
+.clearfix-group::after {
   clear: both; }
 
 .clearfix-group {
   zoom: 1;
   overflow: auto; }
 
-.site {
+input::-webkit-input-placeholder {
+  color: black; }
+
+input:-moz-placeholder {
+  color: black;
+  opacity: 1; }
+
+input::-moz-placeholder {
+  color: black;
+  opacity: 1; }
+
+input:-ms-input-placeholder {
+  color: black; }
+
+input::-ms-input-placeholder {
+  color: black; }
+
+.mobile-menu {
+  display: none; }
+
+.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
 
-.site__site-content {
+.main__main-container {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1; }

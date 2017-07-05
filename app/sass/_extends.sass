@@ -1,0 +1,50 @@
+//Emphasize Box
+%emph-box
+  display: block
+  width: 60%
+  border: 1px solid $color-sundance
+  font-size: 18px
+  font-weight: medium
+  text-transform: uppercase
+  margin-bottom: 20px
+  font-style: normal
+  padding: 12px 15px
+  position: relative
+
+  +md
+    width: 70%
+    font-size: 16px
+
+  &::before
+    content: ''
+    position: absolute
+    top: 40%
+    left: -4px
+    width: 8px
+    height: 16px
+    background-image: url(../img/emph-box-arrow.png)
+    background-size: contain
+    background-repeat: none
+
+
+
+//Clearfix Group
+%clearfix-group
+  zoom: 1
+  overflow: auto
+
+  &::before,
+  &::after
+    content: ''
+    display: table
+
+  &::after
+    clear: both
+
+//Select Wrapper
+%select-wrapper
+  display: inline-block
+  border: 1px solid $color-sundance
+  background-image: url(../img/select-arrow.png)
+  background-position: 90% center
+  background-repeat: no-repeat

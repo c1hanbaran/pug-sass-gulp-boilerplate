@@ -1,12 +1,12 @@
 {
-  "name": "keskinotel",
+  "name": "pug-sass-gulp-boilerplate",
   "version": "1.0.0",
-  "description": "Keskin Otel Website Project",
+  "description": "Start a new front-end project based on pug template engine, sass with bem methodology and gulp as a task runner.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Cihan Baran - Siradisi Digital",
+  "author": "Cihan Baran",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.8",
@@ -23,6 +23,7 @@
     "run-sequence": "^1.2.2"
   },
   "dependencies": {
-    "animate.css": "^3.5.2"
+    "animate.css": "^3.5.2",
+    "gulp-flatten": "^0.3.1"
   }
 }

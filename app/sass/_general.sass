@@ -1,4 +1,4 @@
-// Inherited Box Sizing
+//Inherited Box Sizing
 *,
 *:before,
 *:after
@@ -9,23 +9,33 @@ body
   height: 100%
   box-sizing: border-box
 
-// Clearfix Group
-.clearfix-group:before,
-.clearfix-group:after
+//Clearfix Group
+.clearfix-group::before,
+.clearfix-group::after
   content: ""
   display: table
 
-.clearfix-group:after
+.clearfix-group::after
   clear: both
 
 .clearfix-group
   zoom: 1
   overflow: auto
 
-//Sticky Footer
-.site
-  display: flex
-  flex-direction: column
+// Input Placeholder
+input::-webkit-input-placeholder
+  color: black
 
-.site__site-content
-  flex: 1
+input:-moz-placeholder
+  color: black
+  opacity: 1
+
+input::-moz-placeholder
+  color: black
+  opacity: 1
+
+input:-ms-input-placeholder
+  color: black
+
+input::-ms-input-placeholder
+  color: black
